@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgHinhSanPhamcardView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/emthree" />
+
+        <TextView
+            android:id="@+id/txtTenSanPhamcardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgHinhSanPhamcardView"
+            android:text="Ho va ten"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:id="@+id/txtMaMacHangcardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTenSanPhamcardView"
+            android:layout_toRightOf="@id/imgHinhSanPhamcardView"
+            android:text="Mã sản phẩm"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtGiaSanPhamcardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgHinhSanPhamcardView"
+            android:layout_below="@+id/txtMaMacHangcardView"
+            android:text="Giá"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

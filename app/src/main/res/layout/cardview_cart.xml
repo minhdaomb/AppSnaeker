@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_cart"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgSanPham_Cart"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/cart" />
+
+        <TextView
+            android:id="@+id/txtTenSanPhamcardView_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgSanPham_Cart"
+            android:text="Ho va ten"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:id="@+id/txtMaMacHangcardView_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTenSanPhamcardView_cart"
+            android:layout_toRightOf="@id/imgSanPham_Cart"
+            android:text="Mã sản phẩm"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/txtGiaSanPhamcardView_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgSanPham_Cart"
+            android:layout_below="@+id/txtMaMacHangcardView_cart"
+            android:text="Giá"
+            android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/img_delete_cart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_close"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

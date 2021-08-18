@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MacHangActivity2"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layout_Them"
+    android:background="#1E88E5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <LinearLayout
+            android:id="@+id/linner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_toolbar"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgButton"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:background="@drawable/cammera"
+                android:layout_marginLeft="3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/spnMaHang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/rectangula_field"
+                    android:inputType="textPersonName"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/edtTenSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/rectangula_field"
+                    android:ems="10"
+                    android:hint="Tên sản phẩm"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="4dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/edtMaSP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/rectangula_field"
+                    android:ems="10"
+                    android:hint="Mã sản phẩm"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="4dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/edtGia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/rectangula_field"
+                    android:ems="10"
+                    android:hint="Giá bán"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="4dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/edtSL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/rectangula_field"
+                    android:ems="10"
+                    android:hint="Số lượng"
+                    android:inputType="textPersonName"
+                    android:paddingVertical="4dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--    <androidx.recyclerview.widget.RecyclerView-->
+        <!--        android:id="@+id/recyclerView_MacHang"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent" />-->
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linner"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="3dp"
+            android:text="Insert"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvShowConverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvShowNike"
+            android:textColor="@color/white_color"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="Show Converse"
+            android:textAlignment="center"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tvShowNike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvShowAdidas"
+            android:textColor="@color/white_color"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="Show Nike"
+            android:textAlignment="center"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/tvShowAdidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnInsert"
+            android:textColor="@color/white_color"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="Show Adidas"
+            android:textAlignment="center"
+            android:textSize="35dp" />
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        app:menu="@menu/drawer_menu"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

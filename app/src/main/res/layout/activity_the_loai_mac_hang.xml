@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TheLoaiMacHangActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    android:background="#1E88E5">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/edtmaTheLoai"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Mã Thê loại"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:background="@drawable/rectangula_field"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/edttenTheLoai"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Tên thể loại"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="20dp"
+            android:background="@drawable/rectangula_field"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/edtmoTa"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="Mô tả"
+            android:paddingVertical="15dp"
+            android:textColor="#000000"
+            android:paddingLeft="20dp"
+            android:inputType="textAutoComplete"
+            android:background="@drawable/rectangula_field"/>
+
+    </RelativeLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        />
+    <Button
+        android:id="@+id/btnThemTheLoai"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:text="Thêm Thể Loại"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        app:backgroundTint="#37913A" />
+    <TextView
+        android:id="@+id/backQLTL"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lại Quản Lý mặt hàng "
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_margin="7dp"/>
+</LinearLayout>
